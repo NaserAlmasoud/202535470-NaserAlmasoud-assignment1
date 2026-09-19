@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" width="600" height="375">
+  <rect width="600" height="375" fill="#fbf0d2"/>
+  <rect x="60" y="60" width="480" height="255" rx="12" fill="none" stroke="#7a5a0f" stroke-width="4"/>
+  <rect x="60" y="60" width="480" height="36" rx="12" fill="#7a5a0f" opacity="0.25"/>
+  <text x="300" y="215" font-family="Segoe UI, sans-serif" font-size="34" font-weight="700" fill="#7a5a0f" text-anchor="middle">Weather Snapshot</text>
+</svg>
