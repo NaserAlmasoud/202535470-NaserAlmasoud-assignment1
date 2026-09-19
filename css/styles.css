@@ -11,11 +11,11 @@
 
 /* ---------- 1. Design tokens ---------- */
 :root {
-  --color-bg: #f6f8fb;
+  --color-bg: #d8e5fa;
   --color-surface: #ffffff;
   --color-text: #1f2a44;
   --color-muted: #5a6680;
-  --color-accent: #3112ab;
+  --color-accent: #4830a8;
   --color-accent-contrast: #ffffff;
   --color-highlight: #33a0e8;
   --color-border: #d9dfe9;
