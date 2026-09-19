@@ -2,7 +2,7 @@
 
 A simple, responsive personal portfolio built with plain HTML, CSS, and JavaScript. It introduces me, shows a few of my projects, and includes a contact form. This is the foundation for the professional portfolio I will expand in later assignments.
 
-**Live demo:** https://YOUR-GITHUB-USERNAME.github.io/ID-FirstLast-assignment1/ *(replace after enabling GitHub Pages)*
+**Live demo:** https://NaserAlmasoud.github.io/202535470-NaserAlmasoud-assignment1/
 
 ## Features
 
