@@ -7,8 +7,6 @@
 | Tool | How I used it |
 |---|---|
 | **Claude** (claude.ai) | Analyzed the assignment rubric, generated the first version of the folder structure, HTML, CSS, and JavaScript, and drafted the README and documentation outline. |
-| *GitHub Copilot / ChatGPT / other (if used)* | *e.g. autocompleting CSS properties while I edited the stylesheet* |
-
 ### Example prompts
 
 1. *"Analyse this rubric and create a GitHub repository"* (with the assignment brief attached) – produced the project scaffold.
