@@ -7,24 +7,19 @@
 | Tool | How I used it |
 |---|---|
 | **Claude** (claude.ai) | Analyzed the assignment rubric, generated the first version of the folder structure, HTML, CSS, and JavaScript, and drafted the README and documentation outline. |
-### Example prompts
+### Prompts
 
 1. *"Analyse this rubric and create a GitHub repository"* (with the assignment brief attached) – produced the project scaffold.
-2. *Add a prompt you used to debug or change something.*
-3. *Add a prompt you used to understand code, e.g. "Explain how IntersectionObserver works in setupActiveLinks()".*
-
+2. *What file should I edit first.*
 ## 2. Benefits and challenges
 
 ### Benefits
 - Getting a working, well-organized starting point quickly let me spend my time on understanding and customizing it.
-- The AI mapped each rubric criterion to concrete features (for example, performance → lazy-loaded images, no frameworks).
-- *Add your own.*
+- The AI mapped each rubric criterion to concrete features (for example, performance → lazy-loaded images, no frameworks)
 
 ### Challenges and limitations
 - The generated content was generic placeholder text (name, bio, projects) that did not describe me.
-- *Example: the AI used a feature I didn't know (`IntersectionObserver`, `clamp()`), so I had to research it before I could explain it.*
-- *Example: something that didn't work the first time and how you fixed it.*
-
+- *The AI used some features I didn't know, so I had to research them before I could explain it.*
 ## 3. Learning outcomes
 
 - *How CSS custom properties make a dark theme possible by changing only a few variables.*
