@@ -19,7 +19,7 @@
 
 ### Challenges and limitations
 - The generated content was generic placeholder text (name, bio, projects) that did not describe me.
-- *The AI used some features I didn't know, so I had to research them before I could explain it.*
+- The AI used some features I didn't know, so I had to research them before I could explain it.
 ## 3. Learning outcomes
 
 - *How CSS custom properties make a dark theme possible by changing only a few variables.*
