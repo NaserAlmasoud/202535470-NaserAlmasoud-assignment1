@@ -81,4 +81,4 @@ I used Claude to generate the initial project scaffold, suggest a color palette 
 
 ## Author
 
-**Your Name** – Student ID: `YOUR-ID`
+**Naser Almasoud** – Student ID: `202535470`
