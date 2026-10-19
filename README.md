@@ -15,7 +15,7 @@ A simple, responsive personal portfolio built with plain HTML, CSS, and JavaScri
 | Time-of-day greeting | Headline changes to "Good morning / afternoon / evening" |
 | Dark / light theme | Toggle in the navigation bar; the choice is remembered |
 | Smooth scrolling | Navigation links glide to each section |
-| Active section highlight | The nav link of the section on screen is underlined |
+| Active section highlight | The nav link of the section on screen gets a highlighted pill |
 | Responsive layout | Works on desktop, tablet, and mobile (hamburger menu on small screens) |
 | Accessibility | Skip link, keyboard focus styles, ARIA labels, reduced-motion support |
 
@@ -24,7 +24,7 @@ A simple, responsive personal portfolio built with plain HTML, CSS, and JavaScri
 - HTML5 (semantic elements)
 - CSS3 (custom properties, Flexbox, Grid, media queries)
 - Vanilla JavaScript (ES6+) – no frameworks or build tools
-- Google Fonts: Sora and Source Sans 3
+- [Personal Site Theme](css/theme.css): indigo palette with light/dark modes, self-hosted Manrope (headings) and Source Serif 4 (body) fonts
 
 ## Project structure
 
@@ -33,7 +33,9 @@ A simple, responsive personal portfolio built with plain HTML, CSS, and JavaScri
 ├── README.md
 ├── index.html                  # Page markup
 ├── css/
-│   └── styles.css              # All styles, including themes and breakpoints
+│   ├── theme.css               # Personal Site Theme: colours, fonts, base styles
+│   ├── styles.css              # Portfolio layout, components and breakpoints
+│   └── fonts/                  # Manrope + Source Serif 4 (WOFF2)
 ├── js/
 │   └── script.js               # Greeting, theme toggle, menu, form validation
 ├── assets/

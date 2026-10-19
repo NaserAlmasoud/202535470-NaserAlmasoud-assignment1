@@ -19,15 +19,21 @@ Semantic elements (`header`, `nav`, `main`, `section`, `article`, `footer`) are 
 
 ## 3. Styling (`css/styles.css`)
 
-### Design tokens
-All colors, fonts, spacing values, and the border radius are CSS custom properties on `:root`. The dark theme simply redefines the color variables under `:root[data-theme="dark"]`, so no component needs its own dark-mode rules.
+### Theme and design tokens
+The site uses the **Personal Site Theme** (`css/theme.css`), loaded before `css/styles.css`. The theme defines every colour as a CSS variable, self-hosts the fonts (Manrope for headings, Source Serif 4 for body text, in `css/fonts/`) and styles the plain HTML elements. Dark mode redefines the same variables under `:root[data-theme="dark"]` (or follows the system setting when no choice is saved), so no component needs its own dark-mode rules. `styles.css` only adds the portfolio's layout and components, using the theme's variables.
 
-| Token | Light | Dark |
-|---|---|---|
-| `--color-bg` | `#f6f8fb` | `#121826` |
-| `--color-text` | `#1f2a44` | `#e6eaf2` |
-| `--color-accent` | `#0e7c7b` | `#4fc3b8` |
-| `--color-highlight` | `#f4c95d` | `#8a6d1f` |
+| Token | Light | Dark | Used for |
+|---|---|---|---|
+| `--bg` | `#eff0fa` | `#24255c` | Page background |
+| `--bg-raised` | `#ffffff` | `#2d2e6b` | Project cards, mobile menu |
+| `--bg-sunken` | `#e3e5f3` | `#1c1d4a` | Form inputs |
+| `--ink` | `#1a1b45` | `#eff0fa` | Text |
+| `--ink-muted` | `#4a4d80` | `#b9bbe0` | Secondary text |
+| `--accent` | `#4345c2` | `#a7a9f0` | Links, buttons, greeting |
+| `--accent-soft` | `#dcdcf7` | `#34368a` | Skill pills, active nav link |
+| `--border-hairline` | `#c5c8e4` | `#45478c` | Card and header borders |
+
+Following the theme's guide, cards are separated by borders rather than shadows; the only shadow is on the floating mobile menu.
 
 ### Naming
 Classes follow a light BEM style (`block__element--modifier`), e.g. `.nav__link`, `.btn--primary`. State classes use an `is-` prefix (`.is-open`, `.is-active`, `.is-invalid`).
@@ -61,7 +67,7 @@ All code runs after `DOMContentLoaded` and is split into small functions:
 | `setGreeting()` | Reads the current hour and shows "Good morning" (before 12), "Good afternoon" (12–17), or "Good evening" (18+) |
 | `setupThemeToggle()` | Switches `data-theme` on `<html>` between `light` and `dark`, saves the choice in `localStorage`, and updates the button's `aria-label` |
 | `setupMobileNav()` | Opens/closes the mobile menu, updates `aria-expanded`, closes on link click or the Escape key |
-| `setupActiveLinks()` | Uses `IntersectionObserver` to underline the nav link of the section in the middle of the screen |
+| `setupActiveLinks()` | Uses `IntersectionObserver` to highlight the nav link of the section in the middle of the screen |
 | `setupContactForm()` | Validates each field on blur and on submit, shows specific error messages, focuses the first invalid field, and shows a confirmation when all fields are valid |
 | `setYear()` | Writes the current year in the footer |
 
@@ -79,7 +85,7 @@ The form uses `novalidate` so the browser's default pop-ups are replaced with co
 
 - No frameworks or libraries: the whole site is a few kilobytes of HTML, CSS, and JS.
 - Images are small SVG files; project images use `loading="lazy"` and have fixed `width`/`height` to avoid layout shifts.
-- Fonts load with `display=swap` and `preconnect`, with system-font fallbacks.
+- Fonts are self-hosted WOFF2 files (no third-party request) and load with `font-display: swap`, with system-font fallbacks.
 - `IntersectionObserver` is used instead of a scroll event listener.
 
 ## 6. Browser compatibility
