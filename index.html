@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <!-- Apply the saved theme before the page paints to avoid a flash of the wrong theme -->
-  <script>
+  <!--script>
     try {
       const saved = localStorage.getItem("theme");
       if (saved) document.documentElement.dataset.theme = saved;
       else if (window.matchMedia("(prefers-color-scheme: dark)").matches) document.documentElement.dataset.theme = "dark";
     } catch (e) { /* storage unavailable: keep default theme */ }
-  </script>
+  </script-->
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -66,7 +66,7 @@
         </div>
       </div>
       <div class = "profile">
-        <img class="about__photo" src="assets/images/profile-1.svg" alt="Profile picture placeholder" width="280" height="280">
+        <!-- img class="about__photo" src="assets/images/profile-1.svg" alt="Profile picture placeholder" width="280" height="280"--  >
         <div class="social-links">
           <a href="https://x.com/Naser_Almasoud" target="_blank" rel="noopener" aria-label="Twitter"><i class = "fa-brands fa-x-twitter"></i></a>
           <a href="https://www.linkedin.com/in/naser-almasoud-5b030832a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class = "fa-brands fa-linkedin"></i></a>

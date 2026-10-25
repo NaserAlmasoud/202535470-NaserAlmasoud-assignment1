@@ -26,31 +26,6 @@ function setGreeting() {
 }
 
 /* ---------- 2. Theme toggle ---------- */
-function setupThemeToggle() {
-  const root = document.documentElement;
-  const button = document.getElementById("themeToggle");
-
-  // Keep the button's accessible label in sync with the current theme
-  function updateLabel() {
-    const next = root.dataset.theme === "dark" ? "light" : "dark";
-    button.setAttribute("aria-label", `Switch to ${next} theme`);
-  }
-
-  button.addEventListener("click", () => {
-    const newTheme = root.dataset.theme === "dark" ? "light" : "dark";
-    root.dataset.theme = newTheme;
-    updateLabel();
-
-    // localStorage can fail (e.g. some private browsing modes), so guard it
-    try {
-      localStorage.setItem("theme", newTheme);
-    } catch (error) {
-      console.warn("Theme preference could not be saved.", error);
-    }
-  });
-
-  updateLabel();
-}
 
 /* ---------- 3. Mobile navigation ---------- */
 function setupMobileNav() {
@@ -154,7 +129,6 @@ function setYear() {
 /* Run everything once the HTML is ready */
 document.addEventListener("DOMContentLoaded", () => {
   setGreeting();
-  setupThemeToggle();
   setupMobileNav();
   setupActiveLinks();
   setupContactForm();
