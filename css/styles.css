@@ -163,37 +163,6 @@ section {
   transform: translateY(-4px) rotate(-45deg);
 }
 
-/* Theme toggle: a half-filled circle that flips between themes */
-.theme-toggle {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-inline-start: var(--space-2);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-strong);
-  background: transparent;
-  cursor: pointer;
-  display: grid;
-  place-items: center;
-  transition: background-color 0.2s;
-}
-
-.theme-toggle:hover {
-  background: var(--bg-selection);
-}
-
-.theme-toggle__icon {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: linear-gradient(90deg, var(--ink) 50%, transparent 50%);
-  border: 2px solid var(--ink);
-  transition: transform 0.3s;
-}
-
-:root[data-theme="dark"] .theme-toggle__icon {
-  transform: rotate(180deg);
-}
-
 /* ---------- 4a. About ---------- */
 .about {
   display: grid;
@@ -481,10 +450,6 @@ section {
   .nav .nav__link {
     display: block;
     border-radius: var(--radius-md);
-  }
-
-  .theme-toggle {
-    margin: var(--space-2) 0 0 var(--space-3);
   }
 
   .about {
